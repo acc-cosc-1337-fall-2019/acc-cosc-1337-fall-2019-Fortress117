@@ -1,0 +1,2 @@
+//
+void dangling_pointer();
