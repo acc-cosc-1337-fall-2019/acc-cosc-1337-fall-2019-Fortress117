@@ -9,5 +9,6 @@ TEST_CASE("Verify Test Configuration", "verification") {
 TEST_CASE("Verify sum_numbers function") 
 {
 	REQUIRE(add_numbers(5, 5) == 10);
+	REQUIRE(add_numbers(10, 10) == 20);
 }
 
