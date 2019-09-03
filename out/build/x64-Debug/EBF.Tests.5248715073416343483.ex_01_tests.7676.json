@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "ex_01_tests",
+    "Command": "C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/test/examples_test/01_module_test/ex_01_tests.exe",
+    "Arguments": [
+      "-s"
+    ],
+    "WorkingDirectory": "C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/test/examples_test/01_module_test",
+    "ProjectFile": "C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/test/examples_test/01_module_test/CMakeLists.txt",
+    "LineNumber": 4,
+    "Environment": {},
+    "ExpectsFailure": false,
+    "PassRegularExpression": null,
+    "FailRegularExpression": null,
+    "TargetName": "ex_01_tests.exe (test\\examples_test\\01_module_test\\ex_01_tests.exe)",
+    "TimeoutInMs": -1
+  }
+]
