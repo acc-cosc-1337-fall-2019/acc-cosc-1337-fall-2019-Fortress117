@@ -11,11 +11,10 @@ Call multiply_numbers with 10 and 10 parameter values and display function resul
 */
 int main()
 {
-	int multiply_numbers(int num1, int num2);
+	int result;
+	result = multiply_numbers(10, 10);
 	
-	return num1 * num2;
-
 	cout << "Result: " << result;
 
-	
+	return 0;
 }
