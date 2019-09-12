@@ -30,6 +30,6 @@ TEST_CASE("test menu function")
 	REQUIRE(menu(2) == "Option 2");
 	REQUIRE(menu(3) == "Option 3");
 	REQUIRE(menu(4) == "Option 4");
-	REQUIRE(menu(69) == "Invalid");
+	REQUIRE(menu(69) == "Invalid Option");
 	
 }
