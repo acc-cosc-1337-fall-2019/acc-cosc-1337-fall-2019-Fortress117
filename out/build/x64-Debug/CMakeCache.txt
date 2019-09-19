@@ -85,7 +85,7 @@ CMAKE_INSTALL_PREFIX:PATH=C:/Users/Mason/Source/Repos/acc-cosc-1337-fall-2019-Fo
 CMAKE_LINKER:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.22.27905/bin/Hostx64/x64/link.exe
 
 //make program
-CMAKE_MAKE_PROGRAM:FILEPATH=C:/PROGRA~2/MICROS~2/2019/COMMUN~1/Common7/IDE/COMMON~1/MICROS~1/CMake/Ninja/ninja.exe
+CMAKE_MAKE_PROGRAM:FILEPATH=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe
 
 //Flags used by the linker during the creation of modules during
 // all build types.
@@ -196,24 +196,6 @@ cosc1337_BINARY_DIR:STATIC=C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-F
 //Value Computed by CMake
 cosc1337_SOURCE_DIR:STATIC=C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117
 
-//Value Computed by CMake
-cw_01_library_BINARY_DIR:STATIC=C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/src/classwork/01_assign
-
-//Value Computed by CMake
-cw_01_library_SOURCE_DIR:STATIC=C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/src/classwork/01_assign
-
-//Value Computed by CMake
-cw_02_library_BINARY_DIR:STATIC=C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/src/classwork/02_assign
-
-//Value Computed by CMake
-cw_02_library_SOURCE_DIR:STATIC=C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/src/classwork/02_assign
-
-//Value Computed by CMake
-hw_01_library_BINARY_DIR:STATIC=C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/src/homework/01_expressions
-
-//Value Computed by CMake
-hw_01_library_SOURCE_DIR:STATIC=C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/src/homework/01_expressions
-
 
 ########################
 # INTERNAL cache entries
@@ -303,7 +285,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MT
 CMAKE_MT-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=18
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=22
 //Platform information initialized
 CMAKE_PLATFORM_INFO_INITIALIZED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RC_COMPILER
