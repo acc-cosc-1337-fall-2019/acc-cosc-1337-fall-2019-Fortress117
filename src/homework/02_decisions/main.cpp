@@ -60,9 +60,9 @@ int main()
 	
 	cout << "Enter number grade: ";
 	cin >> grade;
-	int grade_final = get_letter_grade_using_if(grade);
+	std::string grade_final = get_letter_grade_using_if(grade);
 	cout << "Letter grade is : " << grade_final;
-	int grade_final_switch = get_letter_grade_using_switch(grade);
+	std::string grade_final_switch = get_letter_grade_using_switch(grade);
 	cout << "Letter grade is : " << grade_final_switch;
 
 
