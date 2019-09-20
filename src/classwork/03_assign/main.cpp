@@ -1,5 +1,4 @@
 //write includes statements
-#include"loops.cpp"
 #include"loops.h"
 #include<iostream>
 
