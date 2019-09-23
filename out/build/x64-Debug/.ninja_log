@@ -51,3 +51,14 @@
 21	922	590623200	test/homework_test/02_decisions_test/hw_02_tests.exe	363c2dc3152523c5
 7	683	590623783	src/homework/02_decisions/CMakeFiles/hw_02_exe.dir/main.cpp.obj	f08bebeca3d88396
 13	225	590623834	src/homework/02_decisions/hw_02_exe.exe	d0de19d40e02028d
+6	445	590624224	src/homework/02_decisions/CMakeFiles/hw_02_exe.dir/main.cpp.obj	f08bebeca3d88396
+2	770	590961564	build.ninja	2224cbe34b4976b8
+21	955	590961565	src/classwork/03_assign/CMakeFiles/cw_03_exe.dir/main.cpp.obj	10856f8c7f9bc09b
+13	960	590961565	src/homework/02_decisions/CMakeFiles/hw_02_library.dir/decisions.cpp.obj	1884df24fb3090df
+8	968	590961565	src/homework/02_decisions/CMakeFiles/hw_02_exe.dir/main.cpp.obj	f08bebeca3d88396
+4	1025	590961565	src/homework/02_decisions/CMakeFiles/hw_02_exe.dir/decisions.cpp.obj	14157554818428ea
+960	1033	590961565	src/homework/02_decisions/hw_02_library.lib	e2643df6b41141f6
+1025	1279	590961565	src/homework/02_decisions/hw_02_exe.exe	d0de19d40e02028d
+955	1347	590961565	src/classwork/03_assign/cw_03_exe.exe	e6828344656b8e67
+17	3061	590961567	test/homework_test/02_decisions_test/CMakeFiles/hw_02_tests.dir/02_decisions_tests.cpp.obj	6ca47e03664143da
+3061	3514	590961567	test/homework_test/02_decisions_test/hw_02_tests.exe	363c2dc3152523c5
