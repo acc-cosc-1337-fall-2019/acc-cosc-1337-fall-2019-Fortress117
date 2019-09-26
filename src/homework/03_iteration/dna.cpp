@@ -10,7 +10,7 @@ double get_gc_content(const string DNA)
 {
 	int dna_size = DNA.size();
 	string letter = "";
-	int counter = 0;
+	double counter = 0;
 	for (int i = 0; i < dna_size; ++i) 
 	{
 		letter = DNA.at(i);
@@ -20,7 +20,7 @@ double get_gc_content(const string DNA)
 		}
 		
 	}
-	double percent = dna_size / counter;
+	double percent = counter / dna_size;
 	return percent;
 }
 
