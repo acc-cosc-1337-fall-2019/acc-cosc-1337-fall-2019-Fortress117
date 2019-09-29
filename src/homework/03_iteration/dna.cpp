@@ -34,7 +34,7 @@ accepts a string parameter and returns a string reversed.
 string get_reverse_string(string RVDNA)
 {
 
-	int dna_size = RVDNA.size();
+	int dna_size = RVDNA.size() - 1;
 	
 	string reverse = "";
 	
