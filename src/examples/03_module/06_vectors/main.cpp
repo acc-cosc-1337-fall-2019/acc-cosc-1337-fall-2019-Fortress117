@@ -3,6 +3,7 @@
 int main() 
 {
 	loop_vector_w_index();
+	std::vector<int> result = ret_vec_int();
 	std::vector<int> nums = { 99, 55, 1, 3, 66 };
 	
 	/*std::vector<int> nums(9, " ");
@@ -10,6 +11,7 @@ int main()
 	nums.clear();
 	nums.push_back(100); insert on to the end of a list
 	nums.
+	std::vector<std::string> strs(9, " "); 9 items each will be a space
 	*/
 	loop_vector_w_index(nums);
 	
