@@ -17,3 +17,26 @@ TEST_CASE("TEST BANKACCOUNT depsoit")
 
 	REQUIRE(account.get_balance() == 600);
 }
+TEST_CASE("TEST BANKACCOUNT withdraw")
+{
+	BankAccount account;
+	account.withdraw(100);
+
+	REQUIRE(account.get_balance() == 400);
+
+}
+TEST_CASE("TEST BANKACCOUNT running balance")
+{
+	BankAccount account;
+	account.withdraw(100);
+	account.deposit(50);
+
+	REQUIRE(account.get_balance() == 450);
+
+}
+TEST_CASE("Test bankaccount begin balance constructor initiliazer")
+{
+	BankAccount account(1000);
+	REQUIRE(account.get_balance() == 1000);
+
+}

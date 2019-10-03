@@ -51,6 +51,10 @@ bool is_prime(int nums)
 	{
 		return false;
 	}
+	else if (nums == 0)
+	{
+		return false;
+	}
 	else
 	{
 		if (prime_check == 1)
@@ -79,7 +83,7 @@ number is prime.
 vector<int> vector_of_primes(int num)
 {
 	vector<int> primes;
-	for (int i = 0; i = num; i++)
+	for (int i = 0; i < num; i++)
 	{
 		int check = is_prime(i);
 		if (check == 1)
