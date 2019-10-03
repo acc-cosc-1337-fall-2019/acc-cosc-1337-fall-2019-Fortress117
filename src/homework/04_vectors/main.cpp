@@ -5,6 +5,7 @@ using std::cout;
 using std::cin;
 using std::string;
 using std::vector;
+using std::ostream;
 /*
 
 use a vector of int with values 8, 4, 20, 88, 66, 99
@@ -36,13 +37,19 @@ int main()
 
 			while (choice == "y" || choice == "Y")
 			{
-				cout << "Please enter the list of numbers: ";
+				cout << "Please enter a number and press enter: ";
 				cin >> entry;
 				vec.push_back(entry);
+				cout << " { ";
+				for (auto i : vec)
+					cout << i << ' ';
+				cout << " }";
 				cout << "Press y to add another number ";
 				cin >> choice;
+
 			}
-			cout << "The Max of the vector = " << get_max_from_vector(vec) << "\n";
+			int max = get_max_from_vector(vec);
+			cout << "The Max of the vector = " << max << "\n";
 			
 		}
 		else if (menu == 2)

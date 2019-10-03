@@ -12,7 +12,7 @@ vector of intsparameter that returns the max value in a vector
 @param numbers is a const reference to a vector of integers
 @return the max value in the vector
 */
-int get_max_from_vector(const std::vector<int>& nums)
+int get_max_from_vector(const std::vector<int> & nums)
 {
 	int biggest = nums.at(0);
 	int i = 0;

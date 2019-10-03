@@ -50,17 +50,17 @@ The CXX compiler identification is MSVC, found in "C:/Users/Mason/source/repos/a
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_a6c8b 
-[1/2] Building C object CMakeFiles\cmTC_a6c8b.dir\testCCompiler.c.obj
-[2/2] Linking C executable cmTC_a6c8b.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_06cdc 
+[1/2] Building C object CMakeFiles\cmTC_06cdc.dir\testCCompiler.c.obj
+[2/2] Linking C executable cmTC_06cdc.exe
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_0a078 
-[1/2] Building C object CMakeFiles\cmTC_0a078.dir\CMakeCCompilerABI.c.obj
-[2/2] Linking C executable cmTC_0a078.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_5377f 
+[1/2] Building C object CMakeFiles\cmTC_5377f.dir\CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_5377f.exe
 
 
 
@@ -68,9 +68,9 @@ Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Communi
 Detecting C [] compiler features compiled with the following output:
 Change Dir: C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_c01c2 
-[1/2] Building C object CMakeFiles\cmTC_c01c2.dir\feature_tests.c.obj
-[2/2] Linking C executable cmTC_c01c2.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_efcb3 
+[1/2] Building C object CMakeFiles\cmTC_efcb3.dir\feature_tests.c.obj
+[2/2] Linking C executable cmTC_efcb3.exe
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -78,17 +78,17 @@ Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Communi
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_ce364 
-[1/2] Building CXX object CMakeFiles\cmTC_ce364.dir\testCXXCompiler.cxx.obj
-[2/2] Linking CXX executable cmTC_ce364.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_60bbf 
+[1/2] Building CXX object CMakeFiles\cmTC_60bbf.dir\testCXXCompiler.cxx.obj
+[2/2] Linking CXX executable cmTC_60bbf.exe
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_4bb78 
-[1/2] Building CXX object CMakeFiles\cmTC_4bb78.dir\CMakeCXXCompilerABI.cpp.obj
-[2/2] Linking CXX executable cmTC_4bb78.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_ec590 
+[1/2] Building CXX object CMakeFiles\cmTC_ec590.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_ec590.exe
 
 
 
@@ -96,9 +96,9 @@ Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Communi
 Detecting CXX [] compiler features compiled with the following output:
 Change Dir: C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_40f0c 
-[1/2] Building CXX object CMakeFiles\cmTC_40f0c.dir\feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_40f0c.exe
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_e1a12 
+[1/2] Building CXX object CMakeFiles\cmTC_e1a12.dir\feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_e1a12.exe
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers

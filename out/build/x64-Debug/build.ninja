@@ -131,108 +131,108 @@ build src\classwork\edit_cache: phony src\classwork\CMakeFiles\edit_cache.util
 # C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/src/classwork/CMakeLists.txt
 # =============================================================================
 
-
-#############################################
-# Utility command for rebuild_cache
-
-build src\classwork\03_assign\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug\src\classwork\03_assign && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117 -BC:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-build src\classwork\03_assign\rebuild_cache: phony src\classwork\03_assign\CMakeFiles\rebuild_cache.util
-
-#############################################
-# Utility command for test
-
-build src\classwork\03_assign\CMakeFiles\test.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug\src\classwork\03_assign && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
-  DESC = Running tests...
-  pool = console
-  restat = 1
-build src\classwork\03_assign\test: phony src\classwork\03_assign\CMakeFiles\test.util
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target cw_03_library
+# Object build statements for STATIC_LIBRARY target cw_05_library
 
 
 #############################################
-# Order-only phony target for cw_03_library
+# Order-only phony target for cw_05_library
 
-build cmake_object_order_depends_target_cw_03_library: phony || src\classwork\03_assign\CMakeFiles\cw_03_library.dir
-build src\classwork\03_assign\CMakeFiles\cw_03_library.dir\loops.cpp.obj: CXX_COMPILER__cw_03_library ..\..\..\src\classwork\03_assign\loops.cpp || cmake_object_order_depends_target_cw_03_library
+build cmake_object_order_depends_target_cw_05_library: phony || src\classwork\05_assign\CMakeFiles\cw_05_library.dir
+build src\classwork\05_assign\CMakeFiles\cw_05_library.dir\rectangle.cpp.obj: CXX_COMPILER__cw_05_library ..\..\..\src\classwork\05_assign\rectangle.cpp || cmake_object_order_depends_target_cw_05_library
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
   INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
-  OBJECT_DIR = src\classwork\03_assign\CMakeFiles\cw_03_library.dir
-  OBJECT_FILE_DIR = src\classwork\03_assign\CMakeFiles\cw_03_library.dir
-  TARGET_COMPILE_PDB = src\classwork\03_assign\CMakeFiles\cw_03_library.dir\cw_03_library.pdb
-  TARGET_PDB = src\classwork\03_assign\cw_03_library.pdb
+  OBJECT_DIR = src\classwork\05_assign\CMakeFiles\cw_05_library.dir
+  OBJECT_FILE_DIR = src\classwork\05_assign\CMakeFiles\cw_05_library.dir
+  TARGET_COMPILE_PDB = src\classwork\05_assign\CMakeFiles\cw_05_library.dir\cw_05_library.pdb
+  TARGET_PDB = src\classwork\05_assign\cw_05_library.pdb
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target cw_03_library
+# Link build statements for STATIC_LIBRARY target cw_05_library
 
 
 #############################################
-# Link the static library src\classwork\03_assign\cw_03_library.lib
+# Link the static library src\classwork\05_assign\cw_05_library.lib
 
-build src\classwork\03_assign\cw_03_library.lib: CXX_STATIC_LIBRARY_LINKER__cw_03_library src\classwork\03_assign\CMakeFiles\cw_03_library.dir\loops.cpp.obj
+build src\classwork\05_assign\cw_05_library.lib: CXX_STATIC_LIBRARY_LINKER__cw_05_library src\classwork\05_assign\CMakeFiles\cw_05_library.dir\rectangle.cpp.obj
   LANGUAGE_COMPILE_FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
   LINK_FLAGS = /machine:x64
-  OBJECT_DIR = src\classwork\03_assign\CMakeFiles\cw_03_library.dir
+  OBJECT_DIR = src\classwork\05_assign\CMakeFiles\cw_05_library.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = src\classwork\03_assign\CMakeFiles\cw_03_library.dir\cw_03_library.pdb
-  TARGET_FILE = src\classwork\03_assign\cw_03_library.lib
-  TARGET_PDB = src\classwork\03_assign\cw_03_library.pdb
-# =============================================================================
-# Object build statements for EXECUTABLE target cw_03_exe
-
-
-#############################################
-# Order-only phony target for cw_03_exe
-
-build cmake_object_order_depends_target_cw_03_exe: phony || src\classwork\03_assign\CMakeFiles\cw_03_exe.dir
-build src\classwork\03_assign\CMakeFiles\cw_03_exe.dir\main.cpp.obj: CXX_COMPILER__cw_03_exe ..\..\..\src\classwork\03_assign\main.cpp || cmake_object_order_depends_target_cw_03_exe
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
-  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
-  OBJECT_DIR = src\classwork\03_assign\CMakeFiles\cw_03_exe.dir
-  OBJECT_FILE_DIR = src\classwork\03_assign\CMakeFiles\cw_03_exe.dir
-  TARGET_COMPILE_PDB = src\classwork\03_assign\CMakeFiles\cw_03_exe.dir\
-  TARGET_PDB = src\classwork\03_assign\cw_03_exe.pdb
-build src\classwork\03_assign\CMakeFiles\cw_03_exe.dir\loops.cpp.obj: CXX_COMPILER__cw_03_exe ..\..\..\src\classwork\03_assign\loops.cpp || cmake_object_order_depends_target_cw_03_exe
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
-  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
-  OBJECT_DIR = src\classwork\03_assign\CMakeFiles\cw_03_exe.dir
-  OBJECT_FILE_DIR = src\classwork\03_assign\CMakeFiles\cw_03_exe.dir
-  TARGET_COMPILE_PDB = src\classwork\03_assign\CMakeFiles\cw_03_exe.dir\
-  TARGET_PDB = src\classwork\03_assign\cw_03_exe.pdb
-
-# =============================================================================
-# Link build statements for EXECUTABLE target cw_03_exe
-
-
-#############################################
-# Link the executable src\classwork\03_assign\cw_03_exe.exe
-
-build src\classwork\03_assign\cw_03_exe.exe: CXX_EXECUTABLE_LINKER__cw_03_exe src\classwork\03_assign\CMakeFiles\cw_03_exe.dir\main.cpp.obj src\classwork\03_assign\CMakeFiles\cw_03_exe.dir\loops.cpp.obj
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
-  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = src\classwork\03_assign\CMakeFiles\cw_03_exe.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = src\classwork\03_assign\CMakeFiles\cw_03_exe.dir\
-  TARGET_FILE = src\classwork\03_assign\cw_03_exe.exe
-  TARGET_IMPLIB = src\classwork\03_assign\cw_03_exe.lib
-  TARGET_PDB = src\classwork\03_assign\cw_03_exe.pdb
+  TARGET_COMPILE_PDB = src\classwork\05_assign\CMakeFiles\cw_05_library.dir\cw_05_library.pdb
+  TARGET_FILE = src\classwork\05_assign\cw_05_library.lib
+  TARGET_PDB = src\classwork\05_assign\cw_05_library.pdb
 
 #############################################
 # Utility command for edit_cache
 
-build src\classwork\03_assign\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug\src\classwork\03_assign && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build src\classwork\05_assign\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug\src\classwork\05_assign && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
-build src\classwork\03_assign\edit_cache: phony src\classwork\03_assign\CMakeFiles\edit_cache.util
+build src\classwork\05_assign\edit_cache: phony src\classwork\05_assign\CMakeFiles\edit_cache.util
+# =============================================================================
+# Object build statements for EXECUTABLE target cw_05_exe
+
+
+#############################################
+# Order-only phony target for cw_05_exe
+
+build cmake_object_order_depends_target_cw_05_exe: phony || src\classwork\05_assign\CMakeFiles\cw_05_exe.dir
+build src\classwork\05_assign\CMakeFiles\cw_05_exe.dir\main.cpp.obj: CXX_COMPILER__cw_05_exe ..\..\..\src\classwork\05_assign\main.cpp || cmake_object_order_depends_target_cw_05_exe
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = src\classwork\05_assign\CMakeFiles\cw_05_exe.dir
+  OBJECT_FILE_DIR = src\classwork\05_assign\CMakeFiles\cw_05_exe.dir
+  TARGET_COMPILE_PDB = src\classwork\05_assign\CMakeFiles\cw_05_exe.dir\
+  TARGET_PDB = src\classwork\05_assign\cw_05_exe.pdb
+build src\classwork\05_assign\CMakeFiles\cw_05_exe.dir\rectangle.cpp.obj: CXX_COMPILER__cw_05_exe ..\..\..\src\classwork\05_assign\rectangle.cpp || cmake_object_order_depends_target_cw_05_exe
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = src\classwork\05_assign\CMakeFiles\cw_05_exe.dir
+  OBJECT_FILE_DIR = src\classwork\05_assign\CMakeFiles\cw_05_exe.dir
+  TARGET_COMPILE_PDB = src\classwork\05_assign\CMakeFiles\cw_05_exe.dir\
+  TARGET_PDB = src\classwork\05_assign\cw_05_exe.pdb
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cw_05_exe
+
+
+#############################################
+# Link the executable src\classwork\05_assign\cw_05_exe.exe
+
+build src\classwork\05_assign\cw_05_exe.exe: CXX_EXECUTABLE_LINKER__cw_05_exe src\classwork\05_assign\CMakeFiles\cw_05_exe.dir\main.cpp.obj src\classwork\05_assign\CMakeFiles\cw_05_exe.dir\rectangle.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = src\classwork\05_assign\CMakeFiles\cw_05_exe.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = src\classwork\05_assign\CMakeFiles\cw_05_exe.dir\
+  TARGET_FILE = src\classwork\05_assign\cw_05_exe.exe
+  TARGET_IMPLIB = src\classwork\05_assign\cw_05_exe.lib
+  TARGET_PDB = src\classwork\05_assign\cw_05_exe.pdb
+
+#############################################
+# Utility command for rebuild_cache
+
+build src\classwork\05_assign\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug\src\classwork\05_assign && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117 -BC:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+build src\classwork\05_assign\rebuild_cache: phony src\classwork\05_assign\CMakeFiles\rebuild_cache.util
+
+#############################################
+# Utility command for test
+
+build src\classwork\05_assign\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug\src\classwork\05_assign && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+build src\classwork\05_assign\test: phony src\classwork\05_assign\CMakeFiles\test.util
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/src/CMakeLists.txt
@@ -692,69 +692,69 @@ build test\classwork_test\edit_cache: phony test\classwork_test\CMakeFiles\edit_
 # C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/test/classwork_test/CMakeLists.txt
 # =============================================================================
 
-# =============================================================================
-# Object build statements for EXECUTABLE target cw_03_tests
-
-
-#############################################
-# Order-only phony target for cw_03_tests
-
-build cmake_object_order_depends_target_cw_03_tests: phony || cmake_object_order_depends_target_cw_03_library
-build test\classwork_test\03_assign_test\CMakeFiles\cw_03_tests.dir\loops_tests.cpp.obj: CXX_COMPILER__cw_03_tests ..\..\..\test\classwork_test\03_assign_test\loops_tests.cpp || cmake_object_order_depends_target_cw_03_tests
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
-  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
-  OBJECT_DIR = test\classwork_test\03_assign_test\CMakeFiles\cw_03_tests.dir
-  OBJECT_FILE_DIR = test\classwork_test\03_assign_test\CMakeFiles\cw_03_tests.dir
-  TARGET_COMPILE_PDB = test\classwork_test\03_assign_test\CMakeFiles\cw_03_tests.dir\
-  TARGET_PDB = test\classwork_test\03_assign_test\cw_03_tests.pdb
-
-# =============================================================================
-# Link build statements for EXECUTABLE target cw_03_tests
-
-
-#############################################
-# Link the executable test\classwork_test\03_assign_test\cw_03_tests.exe
-
-build test\classwork_test\03_assign_test\cw_03_tests.exe: CXX_EXECUTABLE_LINKER__cw_03_tests test\classwork_test\03_assign_test\CMakeFiles\cw_03_tests.dir\loops_tests.cpp.obj | src\classwork\03_assign\cw_03_library.lib || src\classwork\03_assign\cw_03_library.lib
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
-  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = src\classwork\03_assign\cw_03_library.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = test\classwork_test\03_assign_test\CMakeFiles\cw_03_tests.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = test\classwork_test\03_assign_test\CMakeFiles\cw_03_tests.dir\
-  TARGET_FILE = test\classwork_test\03_assign_test\cw_03_tests.exe
-  TARGET_IMPLIB = test\classwork_test\03_assign_test\cw_03_tests.lib
-  TARGET_PDB = test\classwork_test\03_assign_test\cw_03_tests.pdb
 
 #############################################
 # Utility command for rebuild_cache
 
-build test\classwork_test\03_assign_test\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug\test\classwork_test\03_assign_test && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117 -BC:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug"
+build test\classwork_test\05_assign_test\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug\test\classwork_test\05_assign_test && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117 -BC:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
-build test\classwork_test\03_assign_test\rebuild_cache: phony test\classwork_test\03_assign_test\CMakeFiles\rebuild_cache.util
+build test\classwork_test\05_assign_test\rebuild_cache: phony test\classwork_test\05_assign_test\CMakeFiles\rebuild_cache.util
 
 #############################################
 # Utility command for test
 
-build test\classwork_test\03_assign_test\CMakeFiles\test.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug\test\classwork_test\03_assign_test && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+build test\classwork_test\05_assign_test\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug\test\classwork_test\05_assign_test && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
   DESC = Running tests...
   pool = console
   restat = 1
-build test\classwork_test\03_assign_test\test: phony test\classwork_test\03_assign_test\CMakeFiles\test.util
+build test\classwork_test\05_assign_test\test: phony test\classwork_test\05_assign_test\CMakeFiles\test.util
+# =============================================================================
+# Object build statements for EXECUTABLE target cw_05_tests
+
+
+#############################################
+# Order-only phony target for cw_05_tests
+
+build cmake_object_order_depends_target_cw_05_tests: phony || cmake_object_order_depends_target_cw_05_library
+build test\classwork_test\05_assign_test\CMakeFiles\cw_05_tests.dir\rectangle_tests.cpp.obj: CXX_COMPILER__cw_05_tests ..\..\..\test\classwork_test\05_assign_test\rectangle_tests.cpp || cmake_object_order_depends_target_cw_05_tests
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = test\classwork_test\05_assign_test\CMakeFiles\cw_05_tests.dir
+  OBJECT_FILE_DIR = test\classwork_test\05_assign_test\CMakeFiles\cw_05_tests.dir
+  TARGET_COMPILE_PDB = test\classwork_test\05_assign_test\CMakeFiles\cw_05_tests.dir\
+  TARGET_PDB = test\classwork_test\05_assign_test\cw_05_tests.pdb
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cw_05_tests
+
+
+#############################################
+# Link the executable test\classwork_test\05_assign_test\cw_05_tests.exe
+
+build test\classwork_test\05_assign_test\cw_05_tests.exe: CXX_EXECUTABLE_LINKER__cw_05_tests test\classwork_test\05_assign_test\CMakeFiles\cw_05_tests.dir\rectangle_tests.cpp.obj | src\classwork\05_assign\cw_05_library.lib || src\classwork\05_assign\cw_05_library.lib
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = src\classwork\05_assign\cw_05_library.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = test\classwork_test\05_assign_test\CMakeFiles\cw_05_tests.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = test\classwork_test\05_assign_test\CMakeFiles\cw_05_tests.dir\
+  TARGET_FILE = test\classwork_test\05_assign_test\cw_05_tests.exe
+  TARGET_IMPLIB = test\classwork_test\05_assign_test\cw_05_tests.lib
+  TARGET_PDB = test\classwork_test\05_assign_test\cw_05_tests.pdb
 
 #############################################
 # Utility command for edit_cache
 
-build test\classwork_test\03_assign_test\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug\test\classwork_test\03_assign_test && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build test\classwork_test\05_assign_test\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug\test\classwork_test\05_assign_test && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
-build test\classwork_test\03_assign_test\edit_cache: phony test\classwork_test\03_assign_test\CMakeFiles\edit_cache.util
+build test\classwork_test\05_assign_test\edit_cache: phony test\classwork_test\05_assign_test\CMakeFiles\edit_cache.util
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/test/CMakeLists.txt
@@ -892,14 +892,82 @@ build test\homework_test\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
   restat = 1
 build test\homework_test\edit_cache: phony test\homework_test\CMakeFiles\edit_cache.util
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/test/homework_test/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target hw_04_tests
+
+
+#############################################
+# Order-only phony target for hw_04_tests
+
+build cmake_object_order_depends_target_hw_04_tests: phony || cmake_object_order_depends_target_hw_04_library
+build test\homework_test\04_vectors\CMakeFiles\hw_04_tests.dir\04_vectors_tests.cpp.obj: CXX_COMPILER__hw_04_tests ..\..\..\test\homework_test\04_vectors\04_vectors_tests.cpp || cmake_object_order_depends_target_hw_04_tests
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  INCLUDES = -I..\..\..\inc -ICMakeFiles\ShowIncludes -I..\..\..\src\classwork\01_assign -I..\..\..\src\classwork\02_assign -I..\..\..\src\classwork\03_assign -I..\..\..\src\classwork\04_assign -I..\..\..\src\classwork\05_assign -I..\..\..\src\examples\01_module\01_output -I..\..\..\src\examples\01_module\02_variables -I..\..\..\src\examples\01_module\03_input -I..\..\..\src\examples\01_module\04_expressions -I..\..\..\src\examples\01_module\05_auto -I..\..\..\src\examples\02_module\01_if -I..\..\..\src\examples\02_module\02_if_else -I..\..\..\src\examples\02_module\03_switch -I..\..\..\src\examples\03_module\01_while -I..\..\..\src\examples\03_module\02_for -I..\..\..\src\examples\03_module\03_do_while -I..\..\..\src\examples\03_module\04_for_ranged -I..\..\..\src\examples\03_module\05_value_and_reference_params -I..\..\..\src\examples\03_module\06_vectors -I..\..\..\src\examples\03_module\07_vectors_for_ranged -I..\..\..\src\examples\04_module\01_bank -I..\..\..\src\examples\04_module\02_gui -I..\..\..\src\examples\07_module -I..\..\..\src\examples\08_module -I..\..\..\src\examples\09_module -I..\..\..\src\examples\10_module\01_shapes -I..\..\..\src\examples\10_module\02_clock -I..\..\..\src\examples\11_module\01_ref_pointers -I..\..\..\src\examples\11_module\02_dynamic_memory -I..\..\..\src\examples\11_module\03_memory_leak -I..\..\..\src\examples\11_module\04_dangling_pointer -I..\..\..\src\examples\11_module\05_raii -I..\..\..\src\examples\11_module\06_destructors -I..\..\..\src\examples\11_module\07_class_copy -I..\..\..\src\examples\11_module\08_rule_of_3 -I..\..\..\src\examples\11_module\09_rule_of_5 -I..\..\..\src\examples\12_module\01_arrays_mem -I..\..\..\src\examples\12_module\02_arrays_access -I..\..\..\src\examples\12_module\03_arrays_for_range -I..\..\..\src\examples\12_module\04_arrays_pointers -I..\..\..\src\examples\12_module\05_arrays_functions -I..\..\..\src\examples\12_module\06_arrays_char -I..\..\..\src\examples\12_module\07_arrays_dyn_ch -I..\..\..\src\examples\12_module\08_arrays_dyn_1 -I..\..\..\src\examples\12_module\09_arrays_dyn_2 -I..\..\..\src\examples\12_module\10_arrays_dyn_3 -I..\..\..\src\examples\13_module\01_recursion -I..\..\..\src\homework\01_expressions -I..\..\..\src\homework\02_decisions -I..\..\..\src\homework\03_iteration -I..\..\..\src\homework\04_vectors -I..\..\..\src\homework\tic_tac_toe
+  OBJECT_DIR = test\homework_test\04_vectors\CMakeFiles\hw_04_tests.dir
+  OBJECT_FILE_DIR = test\homework_test\04_vectors\CMakeFiles\hw_04_tests.dir
+  TARGET_COMPILE_PDB = test\homework_test\04_vectors\CMakeFiles\hw_04_tests.dir\
+  TARGET_PDB = test\homework_test\04_vectors\hw_04_tests.pdb
+
+# =============================================================================
+# Link build statements for EXECUTABLE target hw_04_tests
+
+
+#############################################
+# Link the executable test\homework_test\04_vectors\hw_04_tests.exe
+
+build test\homework_test\04_vectors\hw_04_tests.exe: CXX_EXECUTABLE_LINKER__hw_04_tests test\homework_test\04_vectors\CMakeFiles\hw_04_tests.dir\04_vectors_tests.cpp.obj | src\homework\04_vectors\hw_04_library.lib || src\homework\04_vectors\hw_04_library.lib
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /ZI /Ob0 /Od /RTC1 /JMC
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = src\homework\04_vectors\hw_04_library.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = test\homework_test\04_vectors\CMakeFiles\hw_04_tests.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = test\homework_test\04_vectors\CMakeFiles\hw_04_tests.dir\
+  TARGET_FILE = test\homework_test\04_vectors\hw_04_tests.exe
+  TARGET_IMPLIB = test\homework_test\04_vectors\hw_04_tests.lib
+  TARGET_PDB = test\homework_test\04_vectors\hw_04_tests.pdb
+
+#############################################
+# Utility command for rebuild_cache
+
+build test\homework_test\04_vectors\CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug\test\homework_test\04_vectors && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117 -BC:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+build test\homework_test\04_vectors\rebuild_cache: phony test\homework_test\04_vectors\CMakeFiles\rebuild_cache.util
+
+#############################################
+# Utility command for test
+
+build test\homework_test\04_vectors\CMakeFiles\test.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug\test\homework_test\04_vectors && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\ctest.exe" --force-new-ctest-process "
+  DESC = Running tests...
+  pool = console
+  restat = 1
+build test\homework_test\04_vectors\test: phony test\homework_test\04_vectors\CMakeFiles\test.util
+
+#############################################
+# Utility command for edit_cache
+
+build test\homework_test\04_vectors\CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\Mason\source\repos\acc-cosc-1337-fall-2019-Fortress117\out\build\x64-Debug\test\homework_test\04_vectors && "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+build test\homework_test\04_vectors\edit_cache: phony test\homework_test\04_vectors\CMakeFiles\edit_cache.util
+# =============================================================================
 # Target aliases.
 
-build cw_03_exe: phony src\classwork\03_assign\cw_03_exe.exe
-build cw_03_exe.exe: phony src\classwork\03_assign\cw_03_exe.exe
-build cw_03_library: phony src\classwork\03_assign\cw_03_library.lib
-build cw_03_library.lib: phony src\classwork\03_assign\cw_03_library.lib
-build cw_03_tests: phony test\classwork_test\03_assign_test\cw_03_tests.exe
-build cw_03_tests.exe: phony test\classwork_test\03_assign_test\cw_03_tests.exe
+build cw_05_exe: phony src\classwork\05_assign\cw_05_exe.exe
+build cw_05_exe.exe: phony src\classwork\05_assign\cw_05_exe.exe
+build cw_05_library: phony src\classwork\05_assign\cw_05_library.lib
+build cw_05_library.lib: phony src\classwork\05_assign\cw_05_library.lib
+build cw_05_tests: phony test\classwork_test\05_assign_test\cw_05_tests.exe
+build cw_05_tests.exe: phony test\classwork_test\05_assign_test\cw_05_tests.exe
 build ex_04_01_exe: phony src\examples\04_module\01_bank\ex_04_01_exe.exe
 build ex_04_01_exe.exe: phony src\examples\04_module\01_bank\ex_04_01_exe.exe
 build ex_04_01_library: phony src\examples\04_module\01_bank\ex_04_01_library.lib
@@ -910,6 +978,8 @@ build hw_04_exe: phony src\homework\04_vectors\hw_04_exe.exe
 build hw_04_exe.exe: phony src\homework\04_vectors\hw_04_exe.exe
 build hw_04_library: phony src\homework\04_vectors\hw_04_library.lib
 build hw_04_library.lib: phony src\homework\04_vectors\hw_04_library.lib
+build hw_04_tests: phony test\homework_test\04_vectors\hw_04_tests.exe
+build hw_04_tests.exe: phony test\homework_test\04_vectors\hw_04_tests.exe
 # =============================================================================
 # Folder targets.
 
@@ -925,13 +995,13 @@ build  src\all: phony src\classwork\all src\examples\all src\homework\all
 #############################################
 # Folder: C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/src/classwork
 
-build  src\classwork\all: phony src\classwork\03_assign\all
+build  src\classwork\all: phony src\classwork\05_assign\all
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/src/classwork/03_assign
+# Folder: C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/src/classwork/05_assign
 
-build  src\classwork\03_assign\all: phony cw_03_library cw_03_exe
+build  src\classwork\05_assign\all: phony cw_05_library cw_05_exe
 # =============================================================================
 
 #############################################
@@ -973,13 +1043,13 @@ build  test\all: phony test\classwork_test\all test\examples_test\all test\homew
 #############################################
 # Folder: C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/test/classwork_test
 
-build  test\classwork_test\all: phony test\classwork_test\03_assign_test\all
+build  test\classwork_test\all: phony test\classwork_test\05_assign_test\all
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/test/classwork_test/03_assign_test
+# Folder: C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/test/classwork_test/05_assign_test
 
-build  test\classwork_test\03_assign_test\all: phony cw_03_tests
+build  test\classwork_test\05_assign_test\all: phony cw_05_tests
 # =============================================================================
 
 #############################################
@@ -997,7 +1067,13 @@ build  test\examples_test\04_module_test\all: phony ex_04_tests
 #############################################
 # Folder: C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/test/homework_test
 
-build  test\homework_test\all: phony
+build  test\homework_test\all: phony test\homework_test\04_vectors\all
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/test/homework_test/04_vectors
+
+build  test\homework_test\04_vectors\all: phony hw_04_tests
 # =============================================================================
 # Built-in targets
 
@@ -1005,7 +1081,7 @@ build  test\homework_test\all: phony
 #############################################
 # The main all target.
 
-build all: phony src\classwork\03_assign\cw_03_library.lib src\classwork\03_assign\cw_03_exe.exe src\examples\04_module\01_bank\ex_04_01_library.lib src\examples\04_module\01_bank\ex_04_01_exe.exe src\homework\04_vectors\hw_04_library.lib src\homework\04_vectors\hw_04_exe.exe test\classwork_test\03_assign_test\cw_03_tests.exe test\examples_test\04_module_test\ex_04_tests.exe
+build all: phony src\classwork\05_assign\cw_05_library.lib src\classwork\05_assign\cw_05_exe.exe src\examples\04_module\01_bank\ex_04_01_library.lib src\examples\04_module\01_bank\ex_04_01_exe.exe src\homework\04_vectors\hw_04_library.lib src\homework\04_vectors\hw_04_exe.exe test\classwork_test\05_assign_test\cw_05_tests.exe test\examples_test\04_module_test\ex_04_tests.exe test\homework_test\04_vectors\hw_04_tests.exe
 
 #############################################
 # Make the all target the default.
@@ -1015,13 +1091,13 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\src\CMakeLists.txt ..\..\..\src\classwork\03_assign\CMakeLists.txt ..\..\..\src\classwork\CMakeLists.txt ..\..\..\src\examples\04_module\01_bank\CMakeLists.txt ..\..\..\src\examples\04_module\CMakeLists.txt ..\..\..\src\examples\CMakeLists.txt ..\..\..\src\homework\04_vectors\CMakeLists.txt ..\..\..\src\homework\CMakeLists.txt ..\..\..\test\CMakeLists.txt ..\..\..\test\classwork_test\03_assign_test\CMakeLists.txt ..\..\..\test\classwork_test\CMakeLists.txt ..\..\..\test\examples_test\04_module_test\CMakeLists.txt ..\..\..\test\examples_test\CMakeLists.txt ..\..\..\test\homework_test\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.14.19060802-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.14.19060802-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.14.19060802-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.14.19060802-MSVC_2\CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ..\..\..\CMakeLists.txt ..\..\..\src\CMakeLists.txt ..\..\..\src\classwork\05_assign\CMakeLists.txt ..\..\..\src\classwork\CMakeLists.txt ..\..\..\src\examples\04_module\01_bank\CMakeLists.txt ..\..\..\src\examples\04_module\CMakeLists.txt ..\..\..\src\examples\CMakeLists.txt ..\..\..\src\homework\04_vectors\CMakeLists.txt ..\..\..\src\homework\CMakeLists.txt ..\..\..\test\CMakeLists.txt ..\..\..\test\classwork_test\05_assign_test\CMakeLists.txt ..\..\..\test\classwork_test\CMakeLists.txt ..\..\..\test\examples_test\04_module_test\CMakeLists.txt ..\..\..\test\examples_test\CMakeLists.txt ..\..\..\test\homework_test\04_vectors\CMakeLists.txt ..\..\..\test\homework_test\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.14.19060802-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.14.19060802-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.14.19060802-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.14.19060802-MSVC_2\CMakeSystem.cmake
   pool = console
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ..\..\..\CMakeLists.txt ..\..\..\src\CMakeLists.txt ..\..\..\src\classwork\03_assign\CMakeLists.txt ..\..\..\src\classwork\CMakeLists.txt ..\..\..\src\examples\04_module\01_bank\CMakeLists.txt ..\..\..\src\examples\04_module\CMakeLists.txt ..\..\..\src\examples\CMakeLists.txt ..\..\..\src\homework\04_vectors\CMakeLists.txt ..\..\..\src\homework\CMakeLists.txt ..\..\..\test\CMakeLists.txt ..\..\..\test\classwork_test\03_assign_test\CMakeLists.txt ..\..\..\test\classwork_test\CMakeLists.txt ..\..\..\test\examples_test\04_module_test\CMakeLists.txt ..\..\..\test\examples_test\CMakeLists.txt ..\..\..\test\homework_test\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.14.19060802-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.14.19060802-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.14.19060802-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.14.19060802-MSVC_2\CMakeSystem.cmake: phony
+build ..\..\..\CMakeLists.txt ..\..\..\src\CMakeLists.txt ..\..\..\src\classwork\05_assign\CMakeLists.txt ..\..\..\src\classwork\CMakeLists.txt ..\..\..\src\examples\04_module\01_bank\CMakeLists.txt ..\..\..\src\examples\04_module\CMakeLists.txt ..\..\..\src\examples\CMakeLists.txt ..\..\..\src\homework\04_vectors\CMakeLists.txt ..\..\..\src\homework\CMakeLists.txt ..\..\..\test\CMakeLists.txt ..\..\..\test\classwork_test\05_assign_test\CMakeLists.txt ..\..\..\test\classwork_test\CMakeLists.txt ..\..\..\test\examples_test\04_module_test\CMakeLists.txt ..\..\..\test\examples_test\CMakeLists.txt ..\..\..\test\homework_test\04_vectors\CMakeLists.txt ..\..\..\test\homework_test\CMakeLists.txt C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCXXInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\CMakeCommonCompilerMacros.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Compiler\MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-CXX.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake C$:\Program$ Files$ (x86)\Microsoft$ Visual$ Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake CMakeCache.txt CMakeFiles\3.14.19060802-MSVC_2\CMakeCCompiler.cmake CMakeFiles\3.14.19060802-MSVC_2\CMakeCXXCompiler.cmake CMakeFiles\3.14.19060802-MSVC_2\CMakeRCCompiler.cmake CMakeFiles\3.14.19060802-MSVC_2\CMakeSystem.cmake: phony
 
 #############################################
 # Clean all the built files.
