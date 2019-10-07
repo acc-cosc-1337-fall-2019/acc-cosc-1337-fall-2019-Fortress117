@@ -18,10 +18,10 @@ Iterate the vector and display the Area for each Rectangle on one line and the t
 */
 int main()
 {
-	vector<rectangle>rectangles;
-	rectangles.push_back(rectangle(4, 5));
-	rectangles.push_back(rectangle(10, 10));
-	rectangles.push_back(rectangle(100, 10));
+	vector<acc::rectangle>rectangles;
+	rectangles.push_back(acc::rectangle(4, 5));
+	rectangles.push_back(acc::rectangle(10, 10));
+	rectangles.push_back(acc::rectangle(100, 10));
 	
 	for (auto rec : rectangles)
 	{
