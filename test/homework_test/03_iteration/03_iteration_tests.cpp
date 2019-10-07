@@ -14,7 +14,7 @@ TEST_CASE("Test function get_gc_content(string dna)")
 TEST_CASE("Test function get_reverse_string(string dna)")
 {
 	REQUIRE(get_reverse_string("AGCTATAG") == "GATATCGA");
-	REQUIRE(get_reverse_string("CGCTATAG") == "GATATCGA");
+	REQUIRE(get_reverse_string("CGCTATAG") == "GATATCGC");
 }
 TEST_CASE("Test get dna complement")
 {
