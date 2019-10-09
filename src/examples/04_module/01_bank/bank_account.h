@@ -1,4 +1,6 @@
 //bank_account.h
+#ifndef BANK_BALANCE
+#define BANK_BALANCE
 class BankAccount
 {
 public:
@@ -10,3 +12,5 @@ public:
 private:
 	int balance;
 };
+
+#endif
