@@ -7,9 +7,9 @@ TEST_CASE("Verify Test Configuration", "verification") {
 }
 TEST_CASE("Test get get max from vector")
 {
-	std::vector<int> nums = { 3, 8, 1, 99, 1000 };
-	std::vector<int> nums_1 = { 15, 12, 11, 99, 88 };
-	std::vector<int> nums_2 = { 150, 120, 11, 990, 8888 };
+	std::vector<int> nums  { 3, 8, 1, 99, 1000 };
+	std::vector<int> nums_1  { 15, 12, 11, 99, 88 };
+	std::vector<int> nums_2  { 150, 120, 11, 990, 8888 };
 	REQUIRE(get_max_from_vector(nums) == 1000);
 	REQUIRE(get_max_from_vector(nums_1) == 99);
 	REQUIRE(get_max_from_vector(nums_2) == 8888);

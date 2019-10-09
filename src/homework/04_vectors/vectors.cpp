@@ -15,16 +15,16 @@ vector of intsparameter that returns the max value in a vector
 int get_max_from_vector(const std::vector<int> & nums)
 {
 	int biggest = nums.at(0);
-	int i = 0;
-	for (i = 1; nums.size(); i++)
+	
+	for (int i = 1; i < nums.size(); i++)
 	{
 		if (nums.at(i) > biggest)
 		{
-			i = biggest;
+			biggest = nums[i];
 		}
 	}
 
-	return i;
+	return biggest;
 }
 
 
@@ -93,5 +93,5 @@ vector<int> vector_of_primes(int num)
 		
 	}
 
-	return vector<int>(primes);
+	return primes;
 }
