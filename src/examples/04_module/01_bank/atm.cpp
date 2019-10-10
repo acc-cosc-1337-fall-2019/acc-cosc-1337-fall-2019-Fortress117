@@ -6,7 +6,7 @@
 using std::cout;
 
 
-ATM::ATM(BankAccount a) :account(a)
+ATM::ATM(BankAccount a) :account(a) // copy constructor
 {
 
 	
@@ -25,5 +25,5 @@ void ATM::withdraw(int amount)
 void ATM::display_balance() const
 {
 
-	cout << "Balance: " << account.get_balance();
+	cout << "Balance: " << account.get_balance() << " \n";
 }

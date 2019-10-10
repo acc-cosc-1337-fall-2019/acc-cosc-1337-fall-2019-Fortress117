@@ -25,7 +25,11 @@ int main()
 	
 	for (auto rec : rectangles)
 	{
-		cout << "Area : " << rec.get_area() << "\n";
+		cout << rec;
 	}
+	
+	
+	
+	
 	return 0;
 }

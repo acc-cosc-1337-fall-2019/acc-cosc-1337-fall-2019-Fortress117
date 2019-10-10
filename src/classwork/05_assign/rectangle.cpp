@@ -20,4 +20,9 @@ int acc::rectangle::get_area() const
 }
 
 
+std::ostream & acc::operator<<(std::ostream & out, const rectangle & r)
+{
+	out << "Area:  " << r.area << " \n";
 
+	return out;
+}

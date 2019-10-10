@@ -1,7 +1,11 @@
 #include<string>
+#include <iostream>
 #include<vector>
+using std::cout;
+using std::cin;
 using std::string;  
 using std::vector;
+using std::ostream;
 
 
 //h
