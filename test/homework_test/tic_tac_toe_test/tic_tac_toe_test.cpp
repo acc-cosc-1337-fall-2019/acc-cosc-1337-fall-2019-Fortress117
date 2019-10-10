@@ -17,11 +17,11 @@ TEST_CASE("set first player to X")
 	board.start_game("X");
 	REQUIRE(board.get_player() == "X");
 }
-TEST_CASE("set first player to 0")
+TEST_CASE("set first player to O")
 {
 	TicTacToe board;
-	board.start_game("0");
-	REQUIRE(board.get_player() == "0");
+	board.start_game("O");
+	REQUIRE(board.get_player() == "O");
 }
 
 TEST_CASE("Test win by first column", "[X wins first column]")
@@ -187,29 +187,6 @@ TEST_CASE("Test win by first angle", "[X wins first angle]")
 	//X wins 
 	REQUIRE(board.game_over() == true);
 }
-TEST_CASE("Test win by first angle", "[X wins first angle]")
-{ /* Tic Tac Toe Board
-		123
-		456
-		789
-
-
-	   */
-	TicTacToe board;
-	board.start_game("X");
-	REQUIRE(board.game_over() == false);
-	board.mark_board(3);//X         
-	REQUIRE(board.game_over() == false);
-	board.mark_board(4);//O          
-	REQUIRE(board.game_over() == false);
-	board.mark_board(5);//X          
-	REQUIRE(board.game_over() == false);
-	board.mark_board(6);//O          
-	REQUIRE(board.game_over() == false);
-	board.mark_board(7);//X 
-	//X wins 
-	REQUIRE(board.game_over() == true);
-}
 TEST_CASE("Test win by second angle", "[X wins second angle]")
 { /* Tic Tac Toe Board
 		123
@@ -233,6 +210,8 @@ TEST_CASE("Test win by second angle", "[X wins second angle]")
 	//X wins 
 	REQUIRE(board.game_over() == true);
 }
+
+
 TEST_CASE("Test No win")
 { /* Tic Tac Toe Board
 		123

@@ -1,0 +1,18 @@
+[
+  {
+    "Name": "tic_tac_toe_test",
+    "Command": "C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/test/homework_test/tic_tac_toe_test/tic_tac_toe_test.exe",
+    "Arguments": [
+      "-s"
+    ],
+    "WorkingDirectory": "C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/out/build/x64-Debug/test/homework_test/tic_tac_toe_test",
+    "ProjectFile": "C:/Users/Mason/source/repos/acc-cosc-1337-fall-2019-Fortress117/test/homework_test/tic_tac_toe_test/CMakeLists.txt",
+    "LineNumber": 3,
+    "Environment": {},
+    "ExpectsFailure": false,
+    "PassRegularExpression": null,
+    "FailRegularExpression": null,
+    "TargetName": null,
+    "TimeoutInMs": -1
+  }
+]
