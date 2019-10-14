@@ -110,3 +110,19 @@ bool TicTacToe::check_board_full()
 	}
 	return true;
 }
+/*
+std::ostream& operator<<(std::ostream& out, const TicTacToe& A)
+{
+	out << A.display_board();
+
+	return out;
+}
+
+std::istream& operator >> (std::istream & in, TicTacToe & B)
+{
+
+	in >> B.mark_board();
+	
+	return in;
+}
+*/
