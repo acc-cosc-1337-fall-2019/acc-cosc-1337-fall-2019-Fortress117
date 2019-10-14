@@ -17,4 +17,7 @@ ostream &  operator << (ostream & out, const Customer & c)
 	}
 
 	out << "\n Total Balance: " << c.total_balance;
+	
+	
+	return out;
 }
