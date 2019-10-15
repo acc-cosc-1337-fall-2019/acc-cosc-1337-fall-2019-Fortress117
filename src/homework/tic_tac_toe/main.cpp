@@ -27,7 +27,7 @@ int main()
 			bool gaming = false;
 			while (gaming == false)
 			{
-				int move;
+				
 				string player1 = " ";
 				if (player == "X" || player == "x")
 				{
@@ -37,40 +37,21 @@ int main()
 					player1 = "X";
 					
 
-				cout << "Player " << player << " please choose a position 1-9 : ";
-				cin >> move;
-				A.mark_board(move);
-				A.display_board();
-				cout << "\n";
-				int winner = 0;
+				
 				bool finished = A.game_over();
-				if (finished == true)
-				{
-					if (winner != 1)
-					{
-						cout << "Winner" << "\n" << " ";
-						winner = 1;
-					}
-					gaming = true;
-				}
-				else if (finished == false)
-				{
-					cout << "Player " << player1 << " please choose a position 1-9 : ";
-					cin >> move;
-					A.mark_board(move);
-					A.display_board();
-					cout << "\n";
-				}
+				
+				
 				bool over = A.game_over();
 				if (over == true)
+				int winner = 0; 
+				
+				if (winner != 1)
 				{
-					if (winner != 1)
-					{
-						cout << "Winner" << "\n" << " ";
-						winner = 1;
-					}
-					gaming = true;
+					cout << "Winner" << "\n" << " ";
+					winner = 1;
 				}
+				gaming = true;
+				
 			}
 
 

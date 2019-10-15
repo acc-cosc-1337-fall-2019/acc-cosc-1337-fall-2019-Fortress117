@@ -110,19 +110,23 @@ bool TicTacToe::check_board_full()
 	}
 	return true;
 }
-/*
+
 std::ostream& operator<<(std::ostream& out, const TicTacToe& A)
 {
-	out << A.display_board();
+	A.display_board();
 
 	return out;
 }
 
+
 std::istream& operator >> (std::istream & in, TicTacToe & B)
 {
-
-	in >> B.mark_board();
+	int move;
+	cout << "Player please choose a position 1-9 : ";
+	in >> move;
+	B.mark_board(move);
+	
+	
 	
 	return in;
 }
-*/
