@@ -35,23 +35,25 @@ int main()
 				}
 				else
 					player1 = "X";
-					
-
-				
-				bool finished = A.game_over();
-				
+				cin << A;
+				cout << A;
 				
 				bool over = A.game_over();
 				if (over == true)
-				int winner = 0; 
-				
-				if (winner != 1)
 				{
-					cout << "Winner" << "\n" << " ";
-					winner = 1;
+					cout << "Winner";
+					gaming = true;
 				}
-				gaming = true;
 				
+				cin << A;
+				cout << A;
+				bool finish = A.game_over();
+				if (finish == true)
+				{
+					cout << "Winner";
+					gaming = true;
+				}
+			
 			}
 
 
