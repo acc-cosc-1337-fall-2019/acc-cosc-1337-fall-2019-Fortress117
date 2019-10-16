@@ -6,6 +6,7 @@ public:
 	SavingsAccount(int bal, float i = .9) :
 		BankAccount(bal), interest_rate(i) {}
 	void add_interest();
+	int get_balance() const;
 private:
 	const float interest_rate;
 	const float time = 1.0 / 12.0; // monthly interest rate. 
