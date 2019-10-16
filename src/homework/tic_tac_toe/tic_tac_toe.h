@@ -19,7 +19,7 @@ public:
 	string get_player() const;
 	void display_board() const;
 	friend std::ostream& operator << (std::ostream& out,const TicTacToe& A);
-	friend std::istream& operator<< (std::istream& in, TicTacToe& B);
+	friend std::istream& operator >> (std::istream& in, TicTacToe& B);
 
 private:
 	void set_next_player();

@@ -10,7 +10,7 @@ int main()
 {
 	CheckingAccount a(1500);
 
-	cout << a.get_balance;
+	//cout << a.get_balance;
 
 	
 
