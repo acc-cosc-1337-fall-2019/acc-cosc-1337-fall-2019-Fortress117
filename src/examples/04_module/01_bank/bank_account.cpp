@@ -24,6 +24,22 @@ void BankAccount::withdraw(int amount)
 		balance -= amount;
 	}
 }
+
+
+
+BankAccount BankAccount::operator+(const BankAccount & b)
+{
+	BankAccount account;
+	account.balance = balance + b.balance;
+
+
+	return account;
+}
+
+
+
+
+
 int BankAccount::get_balance() const
 {
 	return balance;

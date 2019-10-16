@@ -1,1 +1,9 @@
+#include "savings_account.h"
+
 //savings_account.cpp
+
+void SavingsAccount::add_interest()
+{
+	double interest = balance * interest_rate * time / 100;
+	deposit(interest);
+}

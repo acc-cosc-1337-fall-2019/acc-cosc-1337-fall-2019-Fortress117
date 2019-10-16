@@ -3,16 +3,25 @@
 #include <vector>
 #include "atm.h"
 #include "checking_account.h"
+#include "savings_account.h"
 using std::cout;
 using std::cin;
 using std::vector;
 int main()
 {
 	CheckingAccount a(1500);
-
-	//cout << a.get_balance;
-
 	
+	cout << a;
+
+	SavingsAccount savings(5000); // .05 is the interest rate we send in as a peramiter.
+	savings.add_interest();
+	cout << savings;
+
+
+	BankAccount c = a + savings;
+
+	cout << c;
+
 
 	return 0;
 }
