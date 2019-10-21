@@ -28,14 +28,6 @@ string TicTacToe::get_player() const
 	return next_player;
 }
 
-void TicTacToe::display_board() const
-{
-	cout << pegs[0] << " | " << pegs[1] << " | " << pegs[2] << " \n"
-		<<  pegs[3] << " | " << pegs[4] << " | " << pegs[5] << " \n"
-		<<  pegs[6] << " | " << pegs[7] << " | " << pegs[8];
-
-}
-
 void TicTacToe::set_next_player()
 {
 	if (next_player == "X")
@@ -113,7 +105,10 @@ bool TicTacToe::check_board_full()
 
 std::ostream& operator<<(std::ostream& out, const TicTacToe& A)
 {
-	A.display_board();
+	out << A.pegs[0] << " | " << A.pegs[1] << " | " << A.pegs[2] << " \n"
+		<< A.pegs[3] << " | " << A.pegs[4] << " | " << A.pegs[5] << " \n"
+		<< A.pegs[6] << " | " << A.pegs[7] << " | " << A.pegs[8];
+
 
 	return out;
 }
