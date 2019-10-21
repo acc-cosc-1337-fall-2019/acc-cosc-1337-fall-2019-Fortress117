@@ -3,7 +3,7 @@
 class SavingsAccount : public BankAccount
 {
 public:
-	SavingsAccount(int bal, float i = .9) :
+	SavingsAccount(int bal, float i = .09) :
 		BankAccount(bal), interest_rate(i) {}
 	void add_interest();
 	int get_balance() const;

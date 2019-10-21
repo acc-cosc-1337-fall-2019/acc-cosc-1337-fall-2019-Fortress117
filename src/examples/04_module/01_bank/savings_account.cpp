@@ -4,13 +4,13 @@
 
 void SavingsAccount::add_interest()
 {
-	double interest = balance * interest_rate * time / 100;
+	double interest = balance * interest_rate * time;
 	deposit(interest);
 }
 
 int SavingsAccount::get_balance() const
 {
-	double interest = balance * interest_rate * time / 100;
+	double interest = balance * interest_rate * time;
 
 	return interest + balance;
 }

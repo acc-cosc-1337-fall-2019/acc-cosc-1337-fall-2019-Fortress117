@@ -9,21 +9,15 @@ using std::cin;
 using std::vector;
 int main()
 {
-	CheckingAccount a(1500);
+	CheckingAccount checking(1500);
+	cout << " \n Savings get_balance" << checking.get_balance() << "\n";
 	
-	cout << a;
 
-	SavingsAccount savings(5000); // .05 is the interest rate we send in as a peramiter.
-	cout <<"Calls bank account overload ostream" << savings;
+	SavingsAccount savings(500); // .05 is the interest rate we send in as a peramiter.
 	cout << " \n Savings get_balance" << savings.get_balance() <<  "\n" ;
-	savings.add_interest();
-	cout << savings;
 
-
-	BankAccount c = a + savings;
-
-	cout << c;
-
-
+	BankAccount& account = savings;
+	cout << "\n Ref to savings_get_balance: " << account.get_balance() << "\n";
+	
 	return 0;
 }
