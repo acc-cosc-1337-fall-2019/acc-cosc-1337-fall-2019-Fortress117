@@ -4,8 +4,14 @@
 bool TicTacToe::game_over()
 {
 	if (check_column_win() == true || check_row_win() == true ||
-		check_diagonal_win() == true || check_board_full() == true)
+		check_diagonal_win() == true)
 	{
+		set_winner();
+		return true;
+	}
+	else if (check_board_full() == true)
+	{
+		winner = "C";
 		return true;
 	}
 	return false;
@@ -20,13 +26,26 @@ void TicTacToe::start_game(string player)
 void TicTacToe::mark_board(int position)
 {
 	pegs[position - 1] = next_player;
-	set_next_player();
+
+	if (game_over() == false)
+	{
+		set_next_player();
+	}
+	
+
 }
 
 string TicTacToe::get_player() const
 {
 	return next_player;
 }
+
+string TicTacToe::get_winner() const
+{
+	return winner;
+	
+}
+
 
 void TicTacToe::set_next_player()
 {
@@ -103,6 +122,8 @@ bool TicTacToe::check_board_full()
 	return true;
 }
 
+
+
 std::ostream& operator<<(std::ostream& out, const TicTacToe& A)
 {
 	out << A.pegs[0] << " | " << A.pegs[1] << " | " << A.pegs[2] << " \n"
@@ -124,4 +145,17 @@ std::istream& operator >> (std::istream & in, TicTacToe & B)
 	
 	
 	return in;
+}
+
+void TicTacToe::set_winner()
+{
+	if (check_board_full())
+	if (next_player == "X")
+	{
+		winner = "O";
+	}
+	else
+	{
+		winner = "X";
+	}
 }

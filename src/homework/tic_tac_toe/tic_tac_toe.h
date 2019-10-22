@@ -1,6 +1,10 @@
 #include<string>
 #include<iostream>
 #include<vector>
+#ifndef TIC_TAC_TOE_H
+#define TIC_TAC_TOE_H
+
+
 using std::cout;
 using std::cin;
 using std::string;  
@@ -17,6 +21,8 @@ public:
 	void start_game(string player);
 	void mark_board(int position);
 	string get_player() const;
+	string get_winner() const;
+
 	friend std::ostream& operator << (std::ostream& out,const TicTacToe& A);
 	friend std::istream& operator >> (std::istream& in, TicTacToe& B);
 
@@ -27,7 +33,10 @@ private:
 	bool check_diagonal_win();
 	void clear_board();
 	bool check_board_full();
-	vector<string> pegs{9, " "};
+	vector<string> pegs{9, " "}; // 
 	string next_player;
-
+	void set_winner();
+	string winner;
 };
+
+#endif // !TIC_TAC_TOE_H
