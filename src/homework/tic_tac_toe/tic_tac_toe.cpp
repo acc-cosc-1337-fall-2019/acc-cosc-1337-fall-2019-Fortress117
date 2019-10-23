@@ -27,10 +27,10 @@ void TicTacToe::mark_board(int position)
 {
 	pegs[position - 1] = next_player;
 
-	if (game_over() == false)
-	{
-		set_next_player();
-	}
+	
+	
+	set_next_player();
+	
 	
 
 }
@@ -149,7 +149,7 @@ std::istream& operator >> (std::istream & in, TicTacToe & B)
 
 void TicTacToe::set_winner()
 {
-	if (check_board_full())
+	
 	if (next_player == "X")
 	{
 		winner = "O";
@@ -158,4 +158,5 @@ void TicTacToe::set_winner()
 	{
 		winner = "X";
 	}
+	
 }

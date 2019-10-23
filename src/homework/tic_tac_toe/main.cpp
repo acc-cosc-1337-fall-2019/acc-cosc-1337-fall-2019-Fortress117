@@ -1,6 +1,7 @@
 #include "tic_tac_toe.h"
 #include <iostream>
 #include <string>
+#include "tic_tac_toe_manager.h"
 
 using std::cout;
 using std::cin;
@@ -11,12 +12,15 @@ using std::ostream;
 int main() 
 {
 	TicTacToe A;
+	TicTacToeManager manager;
+	
 	
 		string menu_choice = "y";
 	
 		
 		while (menu_choice == "y" || menu_choice == "Y")
 		{
+			TicTacToe game;
 			string player = " ";
 			cout << "Welcome to tic tac toe! \n";
 			cout << " 1 | 2 | 3 " << "\n" << " 4 | 5 | 6 " << "\n" << " 7 | 8 | 9 ";
@@ -56,7 +60,7 @@ int main()
 			
 			}
 
-
+			manager.save_game(game);
 
 
 
@@ -66,6 +70,8 @@ int main()
 			cin >> menu_choice;
 		}
 	
+		cout << "History: \n";
+		cout << manager;
 
 	return 0;
 }

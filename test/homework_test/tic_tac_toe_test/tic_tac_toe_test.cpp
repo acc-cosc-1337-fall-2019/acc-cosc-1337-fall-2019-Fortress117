@@ -173,19 +173,21 @@ TEST_CASE("Test win by first angle", "[X wins first angle]")
 
 	   */
 	TicTacToe board;
-	board.start_game("X");
+	board.start_game("O");
 	REQUIRE(board.game_over() == false);
-	board.mark_board(3);//X         
+	board.mark_board(1);//o         
 	REQUIRE(board.game_over() == false);
-	board.mark_board(4);//O          
+	board.mark_board(4);//x          
 	REQUIRE(board.game_over() == false);
-	board.mark_board(5);//X          
+	board.mark_board(5);//o          
 	REQUIRE(board.game_over() == false);
-	board.mark_board(6);//O          
+	board.mark_board(3);//x         
 	REQUIRE(board.game_over() == false);
-	board.mark_board(7);//X 
-	//X wins 
+	board.mark_board(9);//o 
+	//O wins 
 	REQUIRE(board.game_over() == true);
+
+	REQUIRE(board.get_winner() == "O");
 }
 TEST_CASE("Test win by second angle", "[X wins second angle]")
 { /* Tic Tac Toe Board
@@ -209,6 +211,8 @@ TEST_CASE("Test win by second angle", "[X wins second angle]")
 	board.mark_board(9);//X 
 	//X wins 
 	REQUIRE(board.game_over() == true);
+
+	REQUIRE(board.get_winner() == "X");
 }
 
 
@@ -242,4 +246,6 @@ TEST_CASE("Test No win")
 	board.mark_board(8);//X          
 	// board full
 	REQUIRE(board.game_over() == true);
+	
+	REQUIRE(board.get_winner() == "C");
 }
