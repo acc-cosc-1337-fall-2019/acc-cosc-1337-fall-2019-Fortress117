@@ -1,26 +1,23 @@
 
 #include <iostream>
-#include <functional>
-#include <vector>
-#include "atm.h"
-#include "checking_account.h"
-#include "savings_account.h"
+
+
 using std::cout;
-using std::cin;
-using std::vector;
-using std::reference_wrapper;
+
 int main()
 {
-	CheckingAccount c(1500);
-	SavingsAccount s(500);
-	vector<reference_wrapper<BankAccount>> accounts{ c, s };
-	
-	
-	for (auto act : accounts)
-	{
-		cout << "Balance: " << act.get().get_balance() << "\n";
-	}
+	int num = 5;
+	int & num_ref = num; //get the address of num
+	std::cout << "Address: " << &num_ref << std::endl; //output address
+	std::cout << "Value at above address: " << num_ref << std::endl; //output value at address of num
 
 
+	int * val_ = &num_ref; //point to the address of num
+	std::cout << "Address pointed to: " << val_ << std::endl; //get the address of num
+	std::cout << "Value pointed to: " << *val_ << std::endl; //get the value pointed to by val_
+	
+	*val_ = 15;
+	std::cout << "Address pointed to: " << val_ << std::endl; //get the address of num
+	std::cout << "Value pointed to: " << *val_ << std::endl; //get the value pointed to by val_
 	return 0;
 }
