@@ -11,6 +11,6 @@
 class Line : public Shape
 {
 public:
-	void draw() { std::cout << "Draw line\n"; }
+	void draw() override;
 };
 #endif // !LINE_H

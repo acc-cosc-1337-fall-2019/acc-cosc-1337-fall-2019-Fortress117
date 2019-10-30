@@ -8,6 +8,7 @@
 
 int main() 
 {
+
 	//Shape s_abtract; can't create instance; pure virtual
 	//function makes it an abstract class
 
