@@ -13,7 +13,6 @@ using std::ostream;
 
 int main() 
 {
-	TicTacToe A;
 	TicTacToeManager manager;
 	int game_type;
 	
@@ -35,52 +34,27 @@ int main()
 			{
 				game = new TicTacToe4;
 			}
-
-		
-			string player = " ";
+			
 			cout << "Welcome to tic tac toe! \n";
-			cout << " 1 | 2 | 3 " << "\n" << " 4 | 5 | 6 " << "\n" << " 7 | 8 | 9 ";
+
 			cout << "\n";
 			cout << "Player 1 please enter capital 'X' or 'O' : ";
+			string player;
+
+			cout << "Enter X or O";
 			cin >> player;
+
 			game ->start_game(player);
-			bool gaming = false;
-			while (gaming == false)
+			while (game->game_over() == false)
 			{
-				
-				string player1 = " ";
-				if (player == "X" || player == "x")
-				{
-					player1 = "0";
-				}
-				else
-					player1 = "X";
-				cin >> A;
-				cout << A;
-				
-				bool over = A.game_over();
-				if (over == true)
-				{
-					cout << "Winner \n";
-					gaming = true;
-				}
-				
-				cin >> A;
-				cout << A;
-				bool finish = A.game_over();
-				if (finish == true)
-				{
-					cout << "Winner \n";
-					gaming = true;
-				}
-			
+				cin >> *game;
+				cout << *game;
 			}
 
+			cout << "Winner: ";
+			cout << game->get_winner()<<"\n";
+
 			manager.save_game(*game);
-
-
-
-
 
 			cout << "Do you want to play again? press 'y' to repeat";
 			cin >> menu_choice;
