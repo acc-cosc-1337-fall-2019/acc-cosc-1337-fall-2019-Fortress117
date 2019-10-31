@@ -2,6 +2,8 @@
 #include <iostream>
 #include <string>
 #include "tic_tac_toe_manager.h"
+#include "tic_tac_toe_3.h"
+#include "tic_tac_toe_4.h"
 
 using std::cout;
 using std::cin;
@@ -13,21 +15,35 @@ int main()
 {
 	TicTacToe A;
 	TicTacToeManager manager;
-	
+	int game_type;
 	
 		string menu_choice = "y";
 	
 		
 		while (menu_choice == "y" || menu_choice == "Y")
 		{
-			TicTacToe game;
+			cout << " Play win by 3 or 4: ";
+			cin >> game_type;
+			
+			TicTacToe* game;
+
+			if (game_type == 3)
+			{
+				game = new TicTacToe3;
+			}
+			else
+			{
+				game = new TicTacToe4;
+			}
+
+		
 			string player = " ";
 			cout << "Welcome to tic tac toe! \n";
 			cout << " 1 | 2 | 3 " << "\n" << " 4 | 5 | 6 " << "\n" << " 7 | 8 | 9 ";
 			cout << "\n";
 			cout << "Player 1 please enter capital 'X' or 'O' : ";
 			cin >> player;
-			A.start_game(player);
+			game ->start_game(player);
 			bool gaming = false;
 			while (gaming == false)
 			{
@@ -60,7 +76,7 @@ int main()
 			
 			}
 
-			manager.save_game(game);
+			manager.save_game(*game);
 
 
 

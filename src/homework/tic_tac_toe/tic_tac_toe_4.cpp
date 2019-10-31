@@ -34,3 +34,18 @@ Win diagonally
 12,13,14, 15
 
 */
+
+bool TicTacToe4::check_column_win()
+{
+	return false;
+}
+
+bool TicTacToe4::check_row_win()
+{
+	return false;
+}
+
+bool TicTacToe4::check_diagonal_win()
+{
+	return false;
+}
