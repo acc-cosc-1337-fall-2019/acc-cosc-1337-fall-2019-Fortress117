@@ -80,7 +80,7 @@ bool TicTacToe::check_diagonal_win()
 
 void TicTacToe::clear_board()
 {
-	for (std::size_t i = 0; i < 9; i++)
+	for (std::size_t i = 0; pegs.size(); i++)
 	{
 		pegs[i] = " ";
 	}
@@ -89,7 +89,7 @@ void TicTacToe::clear_board()
 bool TicTacToe::check_board_full()
 {
 	
-	for (std::size_t i = 0; i < 9; i++)
+	for (std::size_t i = 0; pegs.size(); i++)
 	{ 
 		if (pegs[i] == " ")
 		{
@@ -119,7 +119,7 @@ std::ostream& operator<<(std::ostream& out, const TicTacToe& A)
 std::istream& operator >> (std::istream & in, TicTacToe & B)
 {
 	int move;
-	cout << "Player please choose a position 1-9 : ";
+	cout << "Player please choose a position : ";
 	in >> move;
 	B.mark_board(move);
 	

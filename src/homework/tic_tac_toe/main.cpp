@@ -21,7 +21,8 @@ int main()
 		
 		while (menu_choice == "y" || menu_choice == "Y")
 		{
-			cout << " Play win by 3 or 4: ";
+			cout << "Welcome to tic tac toe! \n";
+			cout << " Play win by 3 or 4?: ";
 			cin >> game_type;
 			
 			TicTacToe* game;
@@ -35,13 +36,10 @@ int main()
 				game = new TicTacToe4;
 			}
 			
-			cout << "Welcome to tic tac toe! \n";
 
 			cout << "\n";
-			cout << "Player 1 please enter capital 'X' or 'O' : ";
 			string player;
-
-			cout << "Enter X or O";
+			cout << "Player 1 please enter capital 'X' or 'O' : ";
 			cin >> player;
 
 			game ->start_game(player);
