@@ -26,6 +26,7 @@ TEST_CASE("set first player to O")
 	REQUIRE(board.get_player() == "O");
 }
 
+
 TEST_CASE("Test win by first column", "[X wins first column]")
 { /* Tic Tac Toe Board
 		123
@@ -248,14 +249,9 @@ TEST_CASE("Test No win")
 	board.mark_board(8);//X          
 	// board full
 	REQUIRE(board.game_over() == true);
-	
+
 	REQUIRE(board.get_winner() == "C");
 }
-
-
-
-
-
 
 
 TEST_CASE("Test win by first column 4", "[X wins first column]")
@@ -286,6 +282,9 @@ vector view: 0, 3, and 6
 	//X wins 
 	REQUIRE(board.game_over() == true);
 }
+
+
+
 
 TEST_CASE("Test win by second column 4 ", "[X wins second column]")
 { /* Tic Tac Toe Board
@@ -576,9 +575,9 @@ TEST_CASE("Test No win    4")
 	REQUIRE(board.game_over() == false);
 	board.mark_board(15);//0
 	REQUIRE(board.game_over() == false);
-	board.mark_board(14);//X
+	board.mark_board(16);//X
 	REQUIRE(board.game_over() == false);
-	board.mark_board(16);//0
+	board.mark_board(14);//0
 	// board full
 	REQUIRE(board.game_over() == true);
 

@@ -36,7 +36,7 @@ Win diagonally
 */
 bool TicTacToe4::check_column_win()
 {
-	for (std::size_t i = 0; i < 3; i++)
+	for (std::size_t i = 0; i < 4; i++)
 	{
 		if (pegs[i] == pegs[i + 4] && pegs[i + 4] == pegs[i + 8] && pegs[i + 8] == pegs[i + 12]
 			&& pegs[i + 12] != " ")
@@ -49,7 +49,7 @@ bool TicTacToe4::check_column_win()
 
 bool TicTacToe4::check_row_win()
 {
-	for (std::size_t i = 0; i < 16; i += 3)
+	for (std::size_t i = 0; i < 16; i += 4)
 	{
 		if (pegs[i] == pegs[i + 1] && pegs[i + 1] == pegs[i + 2] && pegs[i + 2] == pegs[i + 3] && pegs[i + 3] != " ")
 		{

@@ -29,11 +29,11 @@ int main()
 
 			if (game_type == 3)
 			{
-				game = new TicTacToe3;
+				game = new TicTacToe3();
 			}
 			else
 			{
-				game = new TicTacToe4;
+				game = new TicTacToe4();
 			}
 			
 

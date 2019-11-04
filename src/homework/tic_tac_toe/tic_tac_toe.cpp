@@ -80,7 +80,7 @@ bool TicTacToe::check_diagonal_win()
 
 void TicTacToe::clear_board()
 {
-	for (std::size_t i = 0; pegs.size(); i++)
+	for (std::size_t i = 0; i < pegs.size()-1; i++)
 	{
 		pegs[i] = " ";
 	}
@@ -89,7 +89,7 @@ void TicTacToe::clear_board()
 bool TicTacToe::check_board_full()
 {
 	
-	for (std::size_t i = 0; pegs.size(); i++)
+	for (std::size_t i = 0; i < pegs.size()-1; i++)
 	{ 
 		if (pegs[i] == " ")
 		{
@@ -106,10 +106,20 @@ bool TicTacToe::check_board_full()
 
 std::ostream& operator<<(std::ostream& out, const TicTacToe& A)
 {
-	
-	out << A.pegs[0] << " | " << A.pegs[1] << " | " << A.pegs[2] << " \n"
-		<< A.pegs[3] << " | " << A.pegs[4] << " | " << A.pegs[5] << " \n"
-		<< A.pegs[6] << " | " << A.pegs[7] << " | " << A.pegs[8];
+	if (A.pegs.size() == 9)
+	{
+		out << A.pegs[0] << " | " << A.pegs[1] << " | " << A.pegs[2] << " \n"
+			<< A.pegs[3] << " | " << A.pegs[4] << " | " << A.pegs[5] << " \n"
+			<< A.pegs[6] << " | " << A.pegs[7] << " | " << A.pegs[8];
+	}
+	else if (A.pegs.size() == 16) 
+	{
+		out << A.pegs[0] << " | " << A.pegs[1] << " | " << A.pegs[2] << A.pegs[3] <<" \n"
+			<< A.pegs[4] << " | " << A.pegs[5] << " | " << A.pegs[6] << A.pegs[7] << " \n"
+			<< A.pegs[8] << " | " << A.pegs[9] << " | " << A.pegs[10]<< A.pegs[11] <<"\n"
+			<< A.pegs[12] << " | " << A.pegs[13] << " | " << A.pegs[14] << A.pegs[15] << "\n";
+	}
+
 
 
 	return out;
