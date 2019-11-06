@@ -13,7 +13,7 @@ using std::ostream;
 
 int main() 
 {
-	TicTacToeManager manager;
+	unique_ptr<TicTacToeManager> manager = std::make_unique<TicTacToeManager>();
 	int game_type;
 	
 		string menu_choice = "y";
@@ -25,15 +25,15 @@ int main()
 			cout << " Play win by 3 or 4?: ";
 			cin >> game_type;
 			
-			TicTacToe* game;
+			unique_ptr<TicTacToe> game;
 
 			if (game_type == 3)
 			{
-				game = new TicTacToe3();
+				game = std::make_unique<TicTacToe3>();
 			}
 			else
 			{
-				game = new TicTacToe4();
+				game = std::make_unique < TicTacToe4>();
 			}
 			
 
@@ -52,7 +52,7 @@ int main()
 			cout << "Winner: ";
 			cout << game->get_winner()<<"\n";
 
-			manager.save_game(*game);
+			manager -> save_game(game);
 
 			cout << "Do you want to play again? press 'y' to repeat";
 			cin >> menu_choice;

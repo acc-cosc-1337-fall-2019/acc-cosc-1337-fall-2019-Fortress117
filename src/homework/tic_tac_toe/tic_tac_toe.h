@@ -28,9 +28,9 @@ public:
 	friend std::ostream& operator << (std::ostream& out,const TicTacToe& A);
 	friend std::istream& operator >> (std::istream& in, TicTacToe& B);
 protected:
-	virtual bool check_column_win();
-	virtual bool check_row_win();
-	virtual bool check_diagonal_win();
+	virtual bool check_column_win()=0;
+	virtual bool check_row_win()=0;
+	virtual bool check_diagonal_win()=0;
 	vector<string> pegs;
 private:
 	void set_next_player();
