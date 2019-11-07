@@ -13,8 +13,8 @@ Class Constructor
 Panel::Panel(wxWindow* parent)
 	: wxPanel(parent, -1)
 {
-	//1. Create unique pointer of TicTacToeManager
-
+	//1. Create unique pointer instance of TicTacToeManager
+	manager = std::make_unique<TicTacToeManager>();
 
 	auto vbox = new wxBoxSizer(wxVERTICAL);
 	auto top_horizontal_box = get_top_box_sizer();
@@ -29,8 +29,13 @@ Panel::Panel(wxWindow* parent)
 	Call the manager get_games function and save games to a local const vector& reference
 	Using auto& for loop, loop through each game and call the history list box Append
 	function to add the string Game to it --> "Game"*/
-
-
+	const vector < unique_ptr<TicTacToe>>& games = manager->get_games();
+	
+	for (auto& game : games)
+	{
+		history_list_box->Append("Game");
+		
+	}
 
 	vbox->Add(top_horizontal_box, 0, wxEXPAND | wxLEFT | wxRIGHT | wxTOP, 10);
 	vbox->Add(mid_horizontal_box, 0, wxEXPAND | wxLEFT | wxRIGHT | wxTOP, 10);
@@ -63,7 +68,7 @@ void Panel::on_list_box_click(wxCommandEvent& event)
 	//STUDENT MUST WRITE CODE FOR THIS
 	//1) Write code to get a reference to a vector of boards by calling the manager get_games function
 	//Example const std::vector<std::unique_ptr<SomeClass>>& my_class_vector = other_class->get_classes()
-
+	const auto& games = manager->get_games();
 
 	/*STUDENT MUST WRITE CODE FOR THIS
 	2) Write code to get a reference to one board using the history_list_box GetSelection function as
@@ -72,11 +77,11 @@ void Panel::on_list_box_click(wxCommandEvent& event)
 	   The history list box can give you the index by calling its GetSelection function
 	   Use the Example from #1 above as guidance.
 	*/
-
+	auto& board = games[history_list_box->GetSelection()];
 
 	wxGridSizer* sizer;
 
-	if (9 == 9)
+	if (board->get_pegs().size() == 9)
 	{
 		sizer = tic_tac_toe_grid_3;
 		tic_tac_toe_grid_4->Show(false);
@@ -95,7 +100,7 @@ void Panel::on_list_box_click(wxCommandEvent& event)
 	{	//call board get_pegs[i-1]  DONE
 
 		//STUDENT ACTION REQUIRED: REMOVE COMMENTS TO RUN STATEMENT BELOW
-		//item->GetWindow()->SetLabel(board->get_pegs()[i - 1]);
+		item->GetWindow()->SetLabel(board->get_pegs()[i - 1]);
 		item->GetWindow()->Disable();
 		i++;
 	}
@@ -103,7 +108,7 @@ void Panel::on_list_box_click(wxCommandEvent& event)
 	/*STUDENT MUST WRITE CODE FOR THIS
 	5)Call the winner_text SetValue function and pass the board get_winner() return value
 	as its parameter argument*/
-
+	winner_text->SetValue(board->get_winner());
 
 	set_winner_labels();
 	this->Layout();
@@ -138,6 +143,7 @@ void Panel::on_start_button_click(wxCommandEvent & event)
 		pass 3,4, or if you have my solution the values GameType::three or GameType::four
 		as parameter arguments to the get_game function
 		*/
+		board = manager->get_game(3);
 
 
 		tic_tac_toe_grid_4->Show(false);
@@ -153,7 +159,7 @@ void Panel::on_start_button_click(wxCommandEvent & event)
 		pass 3,4, or if you have my solution the values GameType::three or GameType::four
 		as parameter arguments to the get_game function
 		*/
-
+		board = manager->get_game(4);
 
 
 		tic_tac_toe_grid_3->Show(false);
@@ -165,8 +171,14 @@ void Panel::on_start_button_click(wxCommandEvent & event)
 		to determine whether X or O goes first.
 	   if radio button selection 0 call the board start game function with X or O
 	*/
-
-
+	if (first_player_radio->GetSelection() == 0)
+	{
+		board->start_game("X");
+	}
+	else
+	{
+		board->start_game("O");
+	}
 	auto btn = dynamic_cast<wxButton*>(event.GetEventObject());
 	btn->Disable();
 	this->Layout();
@@ -200,6 +212,7 @@ void Panel::on_peg_button_click(wxCommandEvent & event)
 	return value as its parameter argument
 	Example: some_btn->SetLabel(my_class->some_function())
 	*/
+	btn->SetLabel(board->get_player());
 
 
 	/*Call the board's mark_board function and pass the val value as its parmater argument
@@ -233,6 +246,7 @@ void Panel::set_winner_labels()
 	STUDENT MUST WRITE CODE FOR THIS
 	1. Write code to call the manager get winner total and pass the x, o, and c variables as parameters
 	*/
+	manager->get_winner_totals(x, o, c);
 
 
 	/*
@@ -240,11 +254,11 @@ void Panel::set_winner_labels()
 	Remove comments below to properly set labels
 	*/
 
-	/*
+	
 	x_winner_label->SetValue(std::to_string(x));
 	o_winner_label->SetValue(std::to_string(o));
 	c_winner_label->SetValue(std::to_string(c));
-	*/
+
 
 	this->Layout();
 }
@@ -301,8 +315,11 @@ wxBoxSizer * Panel::get_top_box_sizer()
 		wxDefaultPosition, wxSize(70, -1));
 
 	x_winner_label = new wxTextCtrl(this, wxID_ANY);
+	x_winner_label->Disable();
 	o_winner_label = new wxTextCtrl(this, wxID_ANY);
+	o_winner_label->Disable();
 	c_winner_label = new wxTextCtrl(this, wxID_ANY);
+	c_winner_label->Disable();
 
 	hbox0->Add(game_type_radio);
 	hbox0->Add(first_player_radio);
