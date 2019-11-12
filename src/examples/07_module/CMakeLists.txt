@@ -1,4 +1,4 @@
-add_library(ex_07_library "shape.cpp" "shape.h"
-                                "circle.cpp" "circle.h"
+add_library(ex_07_library "shapes.cpp" "shapes.h"
+                                "circles.cpp" "circles.h"
 								"line.cpp" "line.h")
-add_executable(ex_07_exe "main.cpp" "shape.cpp" "circle.cpp" "line.cpp")
+add_executable(ex_07_exe "main.cpp" "shapes.cpp" "circles.cpp" "line.cpp")
