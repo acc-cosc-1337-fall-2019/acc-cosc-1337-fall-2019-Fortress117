@@ -6,7 +6,8 @@
 class Clock
 {
 public:
-	Clock(){ seconds = std::chrono::system_clock::now().time_since_epoch() / std::chrono::seconds(1);	}
+	Clock(){ seconds = std::chrono::system_clock::now().time_since_epoch() / 
+		std::chrono::seconds(1);	}
 	int get_hours() const;
 	int get_minutes() const;
 	int get_seconds() const;
