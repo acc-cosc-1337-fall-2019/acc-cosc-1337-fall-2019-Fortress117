@@ -2,3 +2,12 @@
 //const get balance to return  balance
 //private class member balance initialized to 0
 
+class BankAccount
+{
+public:
+	BankAccount() {}
+	BankAccount(int b) : balance(b) {}
+	int get_balance()const { return balance; }
+private:
+	int balance{ 0 };
+};

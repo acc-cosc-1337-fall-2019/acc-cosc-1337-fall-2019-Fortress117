@@ -5,6 +5,7 @@
 int main()
 {
 	
-
+	myReport r;
+	r.display();
 	return 0;
 }
