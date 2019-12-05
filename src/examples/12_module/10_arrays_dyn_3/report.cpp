@@ -5,7 +5,7 @@
 
 
 myReport::myReport()
-	: accounts{ new BankAccount*[SIZE] } //save 5 memory addresses
+	accounts =  new BankAccount*[SIZE]; //save 5 memory addresses
 {
 	//creates dynamic memory (heap) for each of the 5 addresses
 	for (int i = 0; i < SIZE; ++i)
