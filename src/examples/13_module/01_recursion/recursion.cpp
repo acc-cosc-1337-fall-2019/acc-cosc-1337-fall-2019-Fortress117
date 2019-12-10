@@ -29,3 +29,9 @@ int factorial(int n)
 	std::cout << "unload stack \n";
 	return f;
 }
+
+//this will create an infinite recursive call.
+void call_myself()
+{
+	call_myself();
+}
